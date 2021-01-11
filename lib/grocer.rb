@@ -9,11 +9,11 @@ end
 
 def consolidate_cart(cart)
   shopping_cart = []
-  cart.each do |register|
-    if register[:count]
-      register[:count]+=1
+  cart.each do |cart_item|
+    if cart_item[:count]
+      cart_item[:count]+=1
     else
-      register[:count]=1
+      cart_item[:count]=1
     end
 end
 end
