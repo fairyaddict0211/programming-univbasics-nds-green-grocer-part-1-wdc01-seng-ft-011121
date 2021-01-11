@@ -8,7 +8,7 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  shopping = []
+  shopping_cart = []
   cart.each do |register|
     if register[:count]
       register[:count]+=1
